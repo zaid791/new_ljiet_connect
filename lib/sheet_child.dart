@@ -20,11 +20,12 @@ class StudyMaterial extends StatelessWidget {
         child: Column(
           children: [
             Container(
+              height: mediaQuery.size.height * 0.08,
               width: mediaQuery.size.width,
               padding: const EdgeInsets.all(8.0),
-              child: const Card(
-                color: Colors.amber,
-                child: Center(
+              child: Card(
+                color: Theme.of(context).colorScheme.secondary,
+                child: const Center(
                   child: Text(
                     'Sem - 5',
                     style: TextStyle(

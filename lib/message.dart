@@ -9,13 +9,13 @@ class Message extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(0, 200, 0, 0),
       margin: const EdgeInsets.all(10),
       alignment: Alignment.center,
-      child: const FittedBox(
+      child: FittedBox(
         fit: BoxFit.contain,
         child: Text(
           'Welcome to New LJIET Connect',
           style: TextStyle(
             fontSize: 28,
-            color: Colors.blue,
+            color: Theme.of(context).colorScheme.primary,
           ),
         ),
       ),
